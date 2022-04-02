@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Viga', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --primairyColor: #1B1B1B;
+    --secondaryColor: #FFF;
+    --tertiaryColor: #000;
+    --navBarHeight: 65px;
+    --font_1: 10px;
+    --font_2: 15px;
+    --font_3: 20px;
+    --font_4: 25px;
+    --font_5: 30px;
+    --font_6: 35px;
+    --font_7: 40px;
+    --font_8: 45px;
+    --font_9: 50px;
+}
+
+#navBar {
+    background-color: var(--primairyColor);
+    height: var( --navBarHeight);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font_7);
+}
+
+#section_1 {
+    background-image: url(../assets/home_image.png);
+    height: calc(100vh - var(--navBarHeight));
+    color: #FFF;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#text_1 {
+    width: 80vw;
+    text-align: center;
+    font-size: var(--font_3);
+    margin-bottom: 50px;
+}
+
+#CTOHolder {
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.CTOButton {
+    outline: none;
+    border: none; 
+    border-radius: 8px;
+    height: 55px;
+    width: 160px;
+    font-size: var(--font_3);
+}
+
+.CTOButton:hover {
+    cursor: pointer;
+}
+
+.CTOButton:active {
+    filter: brightness(50%);
+}
+
+#reserverenButton {
+    background-color: var(--primairyColor);
+    color: white;
+    margin-right: 30px;
+}
+
+ #section_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    gap: 20px;
+}
+
+.fillerImg {
+    width: 80vw;
+}
+
+#section_3 {
+    background-color: var(--primairyColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 75px 0 75px 0;
+}
+
+#menuKaartHeader {
+    font-size: var(--font_8);
+    margin-bottom: 50px;
+}
+
+#section_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    gap: 20px;
+}
+
+#section_5 {
+    background-color: var(--primairyColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 400px;
+    text-align: center;
+}
+
+#image_5 {
+    display: none;
+}
+
+#title_5 {
+    font-size: var(--font_8)
+}
+
+#text_5 {
+    font-size: var(--font_3);
+    margin: 20px 0 40px 0;
+}
+
+#section_6 {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+.title_6 {
+    font-size: var(--font_7)
+}
+
+#openingstijdenTitle {
+    margin-top: 50px;
+}
+
+.contactText {
+    font-size: var(--font_3)
+}
+
+.timeTable {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_7 {
+    display: flex;
+    justify-content: space-between;
+    background-color:#1B1B1B;
+    color: #FFF;
+    font-size: 12px;
+}
+
+@media (min-width: 800px) {
+    #section_2 {
+        flex-direction: row;
+    }
+
+    #section_4 {
+        flex-direction: row;
+    }
+        
+    .fillerImg {
+        width: 40vw;
+    }
+
+    #section_5 {
+        text-align: left;
+        padding: 50px;
+        justify-content: space-evenly;
+    }
+    
+    .werkenFlex {
+        width: 40%;
+    }
+
+    #text_5 {
+        padding-right: 20px;
+    }
+    #image_5 {
+        display: block;
+        height: 80%;;
+    }
+
+    #section_6 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #openingstijdenTitle {
+        margin-top: 0;
+    }
+
+    #title_5 {
+        font-size: var(--font_9)
+    }
+
+    #navBar_title {
+        font-size: var(--font_9)
+    }
+
+    #text_1 {
+        width: 40vw;
+    }
+
+    .CTOButton {
+        height: 70px;
+        width: 210px;
+        font-size: var(--font_4);
+    }
+
+    #section_7 {
+        display: flex;
+        justify-content: space-between;
+        background-color:#1B1B1B;
+        color: #FFF;
+        font-size: var(--font_3);
+    }
+}
